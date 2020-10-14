@@ -1,0 +1,98 @@
+! PLEASE READ THIS DOCUMENTATION BEFORE PROCEEDING TO READ, WRITE OR EXECUTE ANY FILES !
+
+========================================================================================
+$ General
+
+
+PURPOSE:
+
+Year 1 / Semester 1 Front-End Web Development Project (CA2)
+
+
+FILE STRUCTURE:
+
+FED Assignment ---- .vscode ---- settings.json
+                |
+                `-- CSS ---- General ---- courses.css
+                |        |            `-- layout.css
+                |        |            `-- reset.css
+                |        |            `-- styles.css
+                |        |
+                |        `-- Specific ---- consultations.css
+                |                      `-- contact_us.css
+                |                      `-- customer_reviews.css
+                |                      `-- index.css
+                |                      `-- login.css
+                |                      `-- payment.css
+                |                      `-- training_courses.css
+                |                      `-- workshops.css
+                |
+                `-- Fonts ---- Comfortaa-Bold.ttf
+                |          `-- Comfortaa-Light.ttf
+                |          `-- Comfortaa-Regular.ttf
+                |          `-- Comfortaa-Regular.woff
+                |          `-- Comfortaa-Regular.woff2
+                |          `-- Sunflower-Light.ttf
+                |
+                `-- HTML ---- consultations.html
+                |         `-- contact_us.html
+                |         `-- customer_reviews.html
+                |         `-- customer_survey.html
+                |         `-- index.html
+                |         `-- lectures.html
+                |         `-- login.html
+                |         `-- payment.html
+                |         `-- training_courses.html
+                |         `-- tutorials.html
+                |         `-- workshops.html
+                |
+                `-- Images ---- General ---- Backgrounds ---- matrixBG.jpg
+                |           |            |                `-- underseaBG.jpg
+                |           |            |
+                |           |            `-- Navbar ---- house(24, 32).png
+                |           |                        `-- like(24, 32).png
+                |           |                        `-- lock(24, 32).png
+                |           |                        `-- presentation(24, 32).png
+                |           |                        `-- telephone(24, 32).png
+                |           |                        `-- unlock(24, 32).png
+                |           |
+                |           `-- Specific ---- Consultations ---- jamesOswaldo(-, MD, LG, XL).jpg
+                |                         |                  `-- janeOswaldo(-, MD, LG, XL).jpg
+                |                         |                  `-- johnnyOswaldo(-, MD, LG, XL).jpg
+                |                         |
+                |                         `-- Index ---- welcome.jpg
+                |                         |
+                |                         `-- Reviews ---- emptyStar(16, 24, 32).png
+                |                                      `-- fullStar(16, 24, 32).png
+                |
+                `-- JS ---- General ---- enrolment.js
+                |       |            `-- forms.js
+                |       |            `-- session.js
+                |       |
+                |       `-- Specific ---- Workshops ---- calendar.js
+                |                     |              `-- workshops.js
+                |                     |
+                |                     `-- contact_us.js
+                |                     `-- customer_survey.js
+                |                     `-- login.js
+                |                     `-- payment.js
+                |                     `-- training_courses.js
+                |
+                `-- Text ---- documentation.txt
+                          `-- references.txt
+
+
+INDEX FILE:
+
+File Path:      FED Assignment/HTML/index.HTML
+Notes:          Open the index file in any browser
+
+
+VIEW:
+
+*   install "Better Comments" by Aaron Bond from the extension marketplace for better aesthetics
+
+
+IMAGE REFERENCES
+
+File Path:      FED Assignment/Text/references.txt

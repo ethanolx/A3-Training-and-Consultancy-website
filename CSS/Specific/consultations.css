@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      consultations.css
+    Description:    style sheet for consultations page
+*/
+
+/* Tab Styles */
+
+.tab-pane {
+    padding: 0;
+}
+
+/* Unordered List Styles */
+
+ul.list-group li:nth-child(odd) {
+    background-color: rgb(201, 201, 201);
+}
+
+ul.nav.nav-tabs>li>a.nav-link {
+    color: wheat;
+}
+
+ul.nav.nav-tabs>li>a.nav-link.active {
+    color: wheat;
+    font-weight: bold;
+    background-color: rgb(88, 50, 0);
+}

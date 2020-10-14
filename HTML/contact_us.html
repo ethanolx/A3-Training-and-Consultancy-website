@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      contact_us.html
+        Description:    company's locations and contacts
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS Files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/contact_us.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/Specific/contact_us.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Contact Us</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <ul class="nav nav-pills nav-justified flex-column flex-sm-row">
+                            <li class="nav-item w-100">
+                                <a class="nav-link active h-100" data-toggle="pill" href="#hq">Our Headquarters (US)</a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="nav-link h-100" data-toggle="pill" href="#sgbranch">Our Singapore Branch</a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="nav-link h-100" data-toggle="pill" href="#chinabranch">Our China Branch</a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="nav-link h-100" data-toggle="pill" href="#japanbranch">Our Japan Branch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="hq">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Location</dt>
+                                            <dd class="list-group-item">Unit: #12-34</dd>
+                                            <dd class="list-group-item">Block: 567</dd>
+                                            <dd class="list-group-item">Situation: Lakeview</dd>
+                                            <dd class="list-group-item">State: Chicago</dd>
+                                            <dd class="list-group-item">Country: United States</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Director</dt>
+                                            <dd class="list-group-item">Name: Mr Johnny Oswaldo</dd>
+                                            <dd class="list-group-item">Work Phone: +1 9999 9999</dd>
+                                            <dd class="list-group-item">Official Email: johnny_o@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Deputy Director (Admin)</dt>
+                                            <dd class="list-group-item">Name: Ms Eliza Swan</dd>
+                                            <dd class="list-group-item">Work Phone: +1 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: eliza_swan.87@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Deputy Director (Operations)</dt>
+                                            <dd class="list-group-item">Name: Mr George Huskey</dd>
+                                            <dd class="list-group-item">Work Phone: +1 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: george_huskey@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="sgbranch">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Location</dt>
+                                            <dd class="list-group-item">Unit: #12-34</dd>
+                                            <dd class="list-group-item">Block: 567</dd>
+                                            <dd class="list-group-item">Situation: Dover Road</dd>
+                                            <dd class="list-group-item">Country: Singapore</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local CEO</dt>
+                                            <dd class="list-group-item">Name: Mr Jake Cahill</dd>
+                                            <dd class="list-group-item">Work Phone: +65 9999 9999</dd>
+                                            <dd class="list-group-item">Official Email: cahill_jake@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local COO</dt>
+                                            <dd class="list-group-item">Name: Ms Dakota Lim</dd>
+                                            <dd class="list-group-item">Work Phone: +65 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: dl_xing_xuan@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="chinabranch">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Location</dt>
+                                            <dd class="list-group-item">Unit: #12-34</dd>
+                                            <dd class="list-group-item">Block: 567</dd>
+                                            <dd class="list-group-item">Situation: Ping'An Avenue</dd>
+                                            <dd class="list-group-item">Province: Beijing</dd>
+                                            <dd class="list-group-item">Country: China</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local CEO</dt>
+                                            <dd class="list-group-item">Name: Mrs Mia Zhang</dd>
+                                            <dd class="list-group-item">Work Phone: +86 9999 9999</dd>
+                                            <dd class="list-group-item">Official Email: zhangminyang@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local COO</dt>
+                                            <dd class="list-group-item">Name: Mr Lin Fei</dd>
+                                            <dd class="list-group-item">Work Phone: +86 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: lin_fei_1978@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="japanbranch">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Location</dt>
+                                            <dd class="list-group-item">Unit: #12-34</dd>
+                                            <dd class="list-group-item">Block: 567</dd>
+                                            <dd class="list-group-item">Situation: Akihabara</dd>
+                                            <dd class="list-group-item">Prefecture: Tokyo</dd>
+                                            <dd class="list-group-item">Country: Japan</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local CEO</dt>
+                                            <dd class="list-group-item">Name: Mr Yamatoto Naryuki</dd>
+                                            <dd class="list-group-item">Work Phone: +81 9999 9999</dd>
+                                            <dd class="list-group-item">Official Email: yama_uki@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Local COO</dt>
+                                            <dd class="list-group-item">Name: Mr Namasaki Riku</dd>
+                                            <dd class="list-group-item">Work Phone: +81 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: namasaki@a3t&c.com</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <article class="col-12" id="operations">
+                        <h5>Availability</h5>
+                        <p>Contact us whenever you need any help. Use this hotline for support: support@a3t&c.com. We're striving to give all of our beloved customers the impeccable experience they deserve. We'll do our best to respond to you as soon as possible.</p>
+                        <p>Here are our operation details:</p>
+                        <ul class="text-white">
+                            <li>Working Hours:&nbsp;&nbsp;&nbsp;0800 - 1800 (Massachusetts)</li>
+                            <li>Working Days:&nbsp;&nbsp;&nbsp;Monday to Thursday (Excluding Public Holidays)</li>
+                            <li>Official Telephone:&nbsp;&nbsp;&nbsp;+1 (012) 345 - 6789</li>
+                            <li>Official Email:&nbsp;&nbsp;&nbsp;a3t&c@a3t&c.com</li>
+                        </ul>
+                        <h5>Alternative</h5>
+                        <p>Alternatively, you may drop us a note here&nbsp;&nbsp;&#x2193;</p>
+                        <form action="#" method="post" class="text-white mb-1 mb-sm-2 mb-xl-4 needs-validation" id="message_form">
+                            <fieldset class="border rounded pl-4 pr-4">
+                                <legend class="text-center p-0">Drop Us a Message</legend>
+                                <div class="form-group form-row">
+                                    <label for="personal_email" class="col-form-label">Work/Personal Email/Phone:</label>
+                                    <input type="text" name="personal_email" id="personal_email" class="form-control" placeholder="+n (nnn) nnn-nnnn  OR  abcdefgh@xyz.net" required/>
+                                </div>
+                                <div class="form-group form-row">
+                                    <label for="subject" class="col-form-label">Subject</label>
+                                    <input type="text" name="subject" id="subject" list="subjects" class="form-control">
+                                    <datalist id="subjects">
+                                        <option value="Code Issues">Code Issues</option>
+                                        <option value="Registration Issues">Registration Issues</option>
+                                        <option value="Logistic Issues">Logistic Issues</option>
+                                    </datalist>
+                                </div>
+                                <div class="form-group form-row">
+                                    <label for="note" class="col-form-label">Message</label>
+                                    <textarea name="note" id="note" rows="5" class="form-control w-100" placeholder="Have a problem? Feel free to contact us! :D" required></textarea>
+                                </div>
+                                <div class="form-group form-row">
+                                    <button type="submit" class="btn btn-block btn-outline-light" onclick="submitNote()">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p>You'll receive an email from support@a3t&c.com or an <abbr title="Short Message Service">SMS</abbr> message from +1 (012) 345 - 6789 within 10 working days.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <aside class="d-none d-lg-block" id="nav_panel">
+                    <h5>Navigation Panel</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hq">Our HQ and Branches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#operations">Our Operations</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+
+        <div class="row">
+            <footer class="col-12 text-center text-white">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Comfortaa Light";
+    src: url(../../Fonts/Comfortaa-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Sunflower;
+    src: url(../../Fonts/Sunflower-Light.ttf) format('truetype');
+}
+
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      login.css
+    Description:    style sheet for login page
+*/
+
+/* Tab Styles */
+
+ul.nav.nav-tabs>li {
+    width: 33.33%;
+}
+
+ul.nav.nav-tabs>li>a {
+    color: white;
+}
+
+ul.nav.nav-tabs>li>a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Terms and Conditions, Privacy Policy, Registration Details Styles */
+
+article.conditions {
+    margin-top: 2em;
+}
+
+article.conditions>p {
+    font-size: 0.75em;
+}
+
+article.conditions>h5 {
+    margin-bottom: 1.2em;
+}
+
+article.conditions>h6 {
+    color: rgb(224, 197, 164);
+    font-family: "Comfortaa Light", "Times New Roman", Sunflower;
+}
+
+article.conditions>ul>li, article.conditions>ol>li {
+    font-size: 0.7em;
+}

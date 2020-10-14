@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File Name:      reset.css
+    Used By:        ALL html files
+    Description:    reset style sheet
+*/
+
+/* Structural Styles */
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Typographic Styles */
+
+address, article, aside, blockquote, body, cite, div, em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, html, img, main, nav, p, section, span {
+   background: transparent;
+   font-size: 100%;
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+body {
+   line-height: 1;
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      customer_reviews.html
+        Description:    past customer feedback
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/customer_reviews.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Customer Reviews</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table table-dark table-bordered table-responsive-sm" id="overall_ratings">
+                            <caption class="text-white"><em>Our Overall Ratings</em></caption>
+                            <tr>
+                                <th scope="row" colspan="2">Highest Rating:</th>
+                                <td>9.4/10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Mean Rating:</th>
+                                <td>7.8/10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Favourite Type of Course</th>
+                                <td>Workshops</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Favourite Course</th>
+                                <td>Data Mining</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="4">Average Rating for each type of course</th>
+                                <td>Workshops:</td>
+                                <td>4.8/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Lectures:</td>
+                                <td>4.0/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Tutorials:</td>
+                                <td>4.5/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Consultations:</td>
+                                <td>3.8/5.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="11">Average Rating for each course</th>
+                                <td>Programming Basics:</td>
+                                <td>3.5/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Machine Learning:</td>
+                                <td>4.0/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Programming:</td>
+                                <td>3.8/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Data Mining:</td>
+                                <td>4.4/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Database Management:</td>
+                                <td>4.2/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>A.I. Basics:</td>
+                                <td>3.9/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Deep Learning:</td>
+                                <td>4.2/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Natural Language Processing:</td>
+                                <td>4.5/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Robotics Integration:</td>
+                                <td>4.7/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Business Implementation:</td>
+                                <td>3.9/5.0</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Vision</td>
+                                <td>4.9/5.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="col-12 text-white text-center mt-4 mb-5">Past Customer Feedback</h5>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="reviews" class="carousel slide" data-ride="carousel">
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <!-- https://www.flaticon.com/free-icon/star_786432?term=star&page=1&position=15 -->
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Best Course Ever!</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">This is the most effective and
+                                                cost-effective training course
+                                                in my experience.</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ John Smith, LA, US
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <!-- https://www.flaticon.com/free-icon/star_786230 -->
+                                                <img src="../Images/Specific/Reviews/emptyStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Inexpensive solution</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">The course fees really are
+                                                affordable, considering the
+                                                standard and quality of their
+                                                services up to date.</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ Jane Barnes, NY, US
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/emptyStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Friendly, customer-first</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">A<sup>3</sup> Training and Consultancy is
+                                                customer-oriented in word and
+                                                in deed. The instructors
+                                                answered all of my queries with
+                                                patience. They were very encouraging too!</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ Betty Parker, Canada
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/emptyStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/emptyStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Can Have More Flexibility</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">Taking all things into
+                                                perspective, investing in <abbr title="A3 Training & Consultancy">A3 T&C</abbr> is really worth the time and money. However, I must say that they can improve their flexibility by allowing make-up sessions for workshops.</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ Alex Lee, Johor, Malaysia
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/emptyStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/emptyStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Jam-packed With Action</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">Engaging and informative, the
+                                                courses offered by <abbr title="A3 Training & Consultancy">A3 T&C</abbr> are
+                                                everything any aspiring data
+                                                scientist needs. Good job!</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ Moni Takichiwa, Osaka, Japan
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex jumbotron flex-column justify-content-between">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                                <img src="../Images/Specific/Reviews/fullStar16.png" alt="" class="d-md-none">
+                                                <img src="../Images/Specific/Reviews/fullStar24.png" alt="" class="d-none d-md-inline d-lg-none">
+                                                <img src="../Images/Specific/Reviews/fullStar32.png" alt="" class="d-none d-lg-inline">
+                                            </div>
+                                            <div class="col-sm-6 col-md-7 text-left text-sm-right">
+                                                <small>Can't ask for more</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <q class="blockquote col-12">I've taken many of their courses and I'm glad to say that they are more than satisfactory. A3's exquisite services are beyond what I'd hoped for. I'll definitely enrol in more courses!</q>
+                                        </div>
+                                        <div class="row">
+                                            <cite class="blockquote-caption col-12 text-right">
+                                                ~ Zavier Heinrich, Berlin, Germany
+                                            </cite>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev pl-xl-4 justify-content-xl-start" href="#reviews"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next pr-xl-4 justify-content-xl-end" href="#reviews"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <aside class="d-none d-md-block" id="nav_panel">
+                    <h5>Navigation Panel</h5>
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overall_ratings">Overall Ratings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Customer Feedback</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center text-white">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

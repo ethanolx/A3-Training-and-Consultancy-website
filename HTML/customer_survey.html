@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      customer_survey.html
+        Description:    customer survey form
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS Files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+
+    <!-- My Javascript Files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/Specific/customer_survey.js" defer></script>
+</head>
+
+<body>
+    <div class="container text-white">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Customer Survey Page</h4>
+        </div>
+        <div class="row mt-2 mb-2">
+            <div class="col-lg-1"></div>
+            <p class="col-lg-10">
+                <small>We are a customer-oriented business, so every feedback counts! We are gathering data to the intent that we may improve the quality and quantity of our services for you, our beloved customers. We promise to uphold your private and personal information in utmost confidentiality.</small>
+            </p>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <form action="#" class="needs-validation" id="customer_survey">
+                    <fieldset class="border rounded p-3">
+                        <legend>&nbsp;&nbsp;Help us by filling up this short form!</legend>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-3" for="email">Email:</label>
+                            <div class="col-md-9">
+                                <input type="email" id="email" class="form-control" readonly />
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-3" for="name">Name:</label>
+                            <div class="col-md-9">
+                                <input type="text" id="name" class="form-control" placeholder="anonymous" />
+                                <small class="form-text text-muted">
+                                    You may leave this field blank should you not wish to disclose your name.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="age">Age:</label>
+                            <div class="col-md-5">
+                                <input type="number" id="age" class="form-control" min="10" max="90" value="35" step="1"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="favType">What is your favourite type of course?</label>
+                            <div class="col-md-5">
+                                <select name="favType" id="favType" class="form-control" size="1" required>
+                                    <option value="" selected>--Choose One--</option>
+                                    <option value="lecture">Lectures</option>
+                                    <option value="tutorial">Tutorials</option>
+                                    <option value="workshop">Workshops</option>
+                                    <option value="consultation">Consultations</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="favCourse">What is your favourite course?</label>
+                            <div class="col-md-5">
+                                <select name="favCourse" id="favCourse" class="form-control" size="1" required>
+                                    <option value="" selected>--Choose One--</option>
+                                    <option value="prg">Programming</option>
+                                    <option value="aibasics">A.I. Basics</option>
+                                    <option value="dataMine">Data Mining</option>
+                                    <option value="dataBase">Database Management</option>
+                                    <option value="aimodel">A.I. Model Construction</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="source">Where did you hear about us?</label>
+                            <div class="col-md-5">
+                                <select name="source" id="source" class="form-control" size="5" multiple required>
+                                    <option value="phyStore">Our Physical Stores</option>
+                                    <option value="ourWeb">Our Website (this one)</option>
+                                    <option value="otherWeb">Other Websites</option>
+                                    <option value="socialMedia">Social Media</option>
+                                    <option value="ads">Advertisements</option>
+                                    <option value="tv">Television</option>
+                                    <option value="radio">Radio</option>
+                                    <option value="word">Word of Mouth</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="otherSrcs">Other:</label>
+                                    <input type="text" name="otherSrcs" id="otherSrcs" class="form-control">
+                                    <small class="form-text text-muted">
+                                        If you selected 'Other' above.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="rating">How would you rate us on a scale of 0 to 10?<br />(0: Absolutely Poor; 10 : Excellent)</label>
+                            <div class="col-md-5">
+                                <div class="form-row pt-2">
+                                    <div class="col-1">0</div>
+                                    <div class="col-10 pt-1"><input type="range" id="rating" class="form-control-range" min="0" max="10" value="5" step="1"></div>
+                                    <div class="col-1">10</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-7" for="very_satisfied">How satisfied are you with our service?</label>
+                            <div class="col-md-5">
+                                <div class="form-group form-check pt-2">
+                                    <input type="radio" name="satisfaction" id="very_satisfied" class="form-check-input" value="vSats" checked required>
+                                    <label for="very_satisfied" class="form-check-label">Very Satisfied</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="radio" name="satisfaction" id="satisfied" class="form-check-input" value="sats">
+                                    <label for="satisfied" class="form-check-label">Satisfied</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="radio" name="satisfaction" id="not_so_satisfied" class="form-check-input" value="nSoSats">
+                                    <label for="not_so_satisfied" class="form-check-label">Not Quite Satisfied</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="radio" name="satisfaction" id="not_satisfied_at_all" class="form-check-input" value="nSats">
+                                    <label for="not_satisfied_at_all" class="form-check-label">Not Satisfied At All</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label for="feedback" class="col-form-label col-md-7">Any other feedback?</label>
+                            <div class="col-md-5">
+                                <textarea name="feedback" id="feedback" class="form-control mt-2" placeholder="NA"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-md-6 pb-2 pb-md-0">
+                                <button type="submit" class="btn btn-outline-warning btn-block" onmousedown="submitCustSurvey()">Submit</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <button type="reset" class="btn btn-outline-warning btn-block">Cancel</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row mt-5">
+            <article class="col-12">
+                <h5>Our Privacy Declaration</h5>
+                <p>We vow not to disclose any information of yours without careful evaluation and will absolutely not do so for your confidential information, such as your personal details.</p>
+                <p>We will use your given data for determining trends and statistics in the current market, and may use these to expand our business.</p>
+                <h5>Our Terms & Conditions</h5>
+                <p>We reserve the right to refuse service to any person for any reason.</p>
+                <p>We reserve the right to pursue legal action should our services be exploited or pirated in any way. Our Course materials are available to you for your personal use and discretion, with the exception of commercial and lucrative purposes.</p>
+                <p>We reserve the right to amend, add to or subtract from these Terms & Conditions at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new
+                    terms taking effect. What constitutes a material change will be determined at our sole
+                    discretion.</p>
+                <p>Please read our full Terms & Conditions for more clarification.</p>
+            </article>
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

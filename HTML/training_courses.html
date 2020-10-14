@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consdltancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      training_courses.html
+        Description:    overview of different course types
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Courses</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/training_courses.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/Specific/training_courses.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Our Training Courses</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <h4 class="col-12 text-white course_category" id="online">Online</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="card h-100">
+                            <header class="card-header bg-primary">
+                                <a href="./lectures.html" class="text-white">
+                                    <h6 class="text-left">Our Lectures</h6>
+                                </a>
+                            </header>
+                            <section class="card-body">
+                                <dl class="list-group list-group-flush">
+                                    <dt class="list-group-item">Overview:</dt>
+                                    <dd class="list-group-item">
+                                        Our lectures are series of high-quality, step-by-step videos that will break
+                                        down
+                                        complex
+                                        topics into easy-to-understand explanations. Unsatisfied? We have a 3-day
+                                        money-back
+                                        guarantee policy. Just email us at <a href="#">support@a3t&c.com</a> if so.
+                                    </dd>
+                                    <dt class="list-group-item">Details:</dt>
+                                    <dd class="list-group-item">Flexible: watch the videos at your own time and pace.
+                                    </dd>
+                                    <dt class="list-group-item">Topics Available:</dt>
+                                    <dd class="list-group-item">Programming Basics, A.I. Basics, Advanced Programming,
+                                        Machine Learning, Data Mining, Database Management</dd>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <header class="card-header bg-primary">
+                                <a href="./tutorials.html" class="text-white">
+                                    <h6 class="text-right text-lg-left">Our Tutorials</h6>
+                                </a>
+                            </header>
+                            <section class="card-body">
+                                <dl class="list-group list-group-flush">
+                                    <dt class="list-group-item">Overview:</dt>
+                                    <dd class="list-group-item">
+                                        Our tutorials are held by our team of well-trained instructors over easily
+                                        accessible online platforms such as Microsoft Teams, Google Meet and Zoom. Our
+                                        lessons are live, so you can consult our instructors on the spot should you have
+                                        any queries.
+                                    </dd>
+                                    <dt class="list-group-item">Details:</dt>
+                                    <dd class="list-group-item">Convenient, affordable and gratifying!</dd>
+                                    <dt class="list-group-item">Course Topics Available:</dt>
+                                    <dd class="list-group-item">Machine Learning, Deep Learning, Computer Vision, Natural Language Processing (NLP), Business Implementation (of A.I.), Robotics Integration</dd>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12 text-white course_category" id="on-site">On-Site</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="card h-100">
+                            <header class="card-header bg-info">
+                                <a href="./workshops.html" class="text-white">
+                                    <h6 class="text-left">Our Workshops</h6>
+                                </a>
+                            </header>
+                            <section class="card-body">
+                                <dl class="list-group list-group-flush">
+                                    <dt class="list-group-item">Overview:</dt>
+                                    <dd class="list-group-item">
+                                        Interactive, engaging and jam-packed with fun activities, our workshops are sure
+                                        to grant you a fulfilling and enriching experience. Don't hesitate further: join
+                                        us in our A.I. Journey today!
+                                    </dd>
+                                    <dt class="list-group-item">Details:</dt>
+                                    <dd class="list-group-item">Our Workshops will not disappoint!<br />People's
+                                        favourite!</dd>
+                                    <dt class="list-group-item">Topics Available:</dt>
+                                    <dd class="list-group-item">Programming Basics, A.I. Basics, Advanced Programming,
+                                        Machine Learning, Data Mining, Database Management, Deep Learning, Computer Vision, Natural Language Processing (NLP), Business Implementation (of A.I.), Robotics Integration</dd>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <header class="card-header bg-info">
+                                <a href="./consultations.html" class="text-white">
+                                    <h6 class="text-right text-lg-left">Consultations</h6>
+                                </a>
+                            </header>
+                            <section class="card-body">
+                                <dl class="list-group list-group-flush">
+                                    <dt class="list-group-item">Overview:</dt>
+                                    <dd class="list-group-item">
+                                        If you wish to clarify your doubts or to meet our personnel, feel free to drop
+                                        us an email at least 3 days in advance. Our Founders are also available for
+                                        interviews (in their country). Happy coding!
+                                    </dd>
+                                    <dt class="list-group-item">Details:</dt>
+                                    <dd class="list-group-item">Extra inquiries, interviews</dd>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <aside class="d-none d-lg-block" id="nav_panel">
+                    <h5>Navigation Panel</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#online">Our Online Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#on-site">Our On-site Courses</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <section class="col-12 text-center" id="custSurvLink">
+            </section>
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center text-white">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

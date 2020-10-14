@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File Name:      layout.css
+    Used By:        ALL html files
+    Description:    general positioning of elements
+*/
+
+/* Header Styles */
+
+/* Company Logo Styles */
+
+.company_logo {
+    height: 15vw;
+    max-height: 200px;
+    min-height: 100px;
+    padding: 1em;
+}
+
+.company_logo>h2 {
+    text-align: right;
+    width: 100%;
+}
+
+/* Title Styles */
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+    .container>div.row:nth-child(2) {
+        margin: 1.5em 1em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div.container>div.row:nth-child(2) {
+        margin: 1.5em 0;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    div.container>div.row:nth-child(2) {
+        margin: 2em 1.2em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    body>div.container>div.row:nth-child(2)>h4 {
+        font-size: x-large;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Article Styles */
+
+/* Paragraph Styles */
+
+article p {
+    margin: 1em 0 1.2em 0.6em;
+}
+
+/* Aside Styles */
+
+aside {
+    padding: 1.5em;
+}
+
+/* Navigation Panel Styles */
+
+@media only screen and (min-width: 1200px) {
+    #nav_panel {
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #nav_panel {
+        padding: 0.7em;
+    }
+}
+
+/* Footer Styles */
+
+body>div.container>div.row>footer {
+    padding: 2em 0;
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File Name:      workshops.css
+    Description:    style sheet for workshops page
+*/
+
+/* Table (Event Calendar) Styles */
+
+table caption {
+    caption-side: top;
+    text-align: center;
+}
+
+small.day_label {
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+#calendar_table {
+    border: 5px ridge rgb(94, 94, 94);
+}
+
+#calendar_today {
+    background-color: coral;
+}
+
+#calendar_table tr td {
+    text-align: center;
+    padding: 0.3em;
+}
+
+#calendar_table tr td a {
+    font-style: oblique;
+    color: white;
+}
+
+#calendar_table tr:first-child th {
+    width: 14.29%;
+    min-width: 96px;
+}
+
+/* Carousel Styles */
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item .row {
+    height: 100%;
+}
+
+.carousel-item .row .col-md-10 {
+    height: 100%;
+}
+
+.carousel-item .row .card {
+    height: 100%;
+}
+
+/* Carousel Heights */
+
+@media only screen and (max-width: 300px) {
+    .carousel-inner {
+        height: 430px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 301px) {
+    .carousel-inner {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 401px) {
+    .carousel-inner {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 451px) {
+    .carousel-inner {
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 501px) {
+    .carousel-inner {
+        height: 430px;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 601px) {
+    .carousel-inner {
+        height: 415px;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 751px) {
+    .carousel-inner {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 801px) {
+    .carousel-inner {
+        height: 530px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 901px) {
+    .carousel-inner {
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .carousel-inner {
+        height: 575px;
+    }
+}

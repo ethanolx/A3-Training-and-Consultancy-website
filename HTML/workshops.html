@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      workshops.html
+        Description:    workshop events
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/workshops.css">
+    <link rel="stylesheet" href="../CSS/General/courses.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/General/enrolment.js" defer></script>
+    <script src="../JS/Specific/Workshops/workshops.js" defer></script>
+    <script src="../JS/Specific/Workshops/calendar.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Our Workshops</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <table id="calendar_table" class="table table-hover table-bordered table-responsive-lg table-dark">
+                </table>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div id="workshopsCarousel" class="carousel slide" data-ride="carousel">
+
+                    <a class="carousel-control-prev pl-xl-4 col-md-1" href="#workshopsCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Programming Basics</header>
+                                        <section class="card-body">
+                                            <p>What is programming? What's the difference between a program and an
+                                                algorithm? How do
+                                                computers execute programs?</p>
+                                            <p>If you aren't sure of how to answer these questions, don't worry! We have
+                                                an entire course
+                                                planned out for you.</p>
+                                            <p>By the end of our Programming Basics course, you'll master most of the
+                                                basic techniques of
+                                                programming in Python.</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 3
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.0/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$18.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Advanced Programming</header>
+                                        <section class="card-body">
+                                            <p>You've probably learnt the basics of Object-Oriented Programming already.
+                                                Nevertheless,
+                                                that's only the tip of the iceberg! There are much more programming
+                                                treasures in store for
+                                                you!</p>
+                                            <p>It's time to move on and acquire more powerful programming skills in
+                                                order to optimise your
+                                                code and conserve your resources more efficiently.</p>
+                                            <p>Welcome to the next segment of your programming journey, with our
+                                                Advanced Programming
+                                                course.</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 4
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.2/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$26.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Data Mining</header>
+                                        <section class="card-body">
+                                            <p>You may have heard of the term "Data Mining" before. But what is it
+                                                exactly? Is it even
+                                                relevant in today's context?</p>
+                                            <p>Well, it certainly is!</p>
+                                            <p>Many large companies employ data scientists to help them observe and
+                                                interpret trends in the
+                                                global and/or local markets, assisting their business decisions.</p>
+                                            <p>In fact, qualified data scientists are highly sought after
+                                                in today's day and age.</p>
+                                            <p>What are you waiting for?</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 5
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.6/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$35.60
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">A.I. Basics</header>
+                                        <section class="card-body">
+                                            <div class="card-text">
+                                                <p>The subject of A.I. is very prevalent in this modern era, yet many
+                                                    people have very
+                                                    little to no real clue what A.I. is or worse, they distort the image
+                                                    of A.I. altogether.
+                                                </p>
+                                                <p>Fear not, we're here to dispel your doubts!</p>
+                                                <p>In this course, we'll explain in detail what A.I. is all about, as
+                                                    well as give you a
+                                                    solid foundation in programming with A.I..</p>
+                                            </div>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 3
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.0/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$23.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Machine Learning</header>
+                                        <section class="card-body">
+                                            <p>First off, machine learning is not magic, neither does it mean that the
+                                                machine is thinking
+                                                on its own. How then does it make accurate and precise predictions
+                                                consistently?</p>
+                                            <p>Come and find out the mystery of machine learning today.</p>
+                                            <p>In this course, we'll reveal the secrets of machine learning and how its
+                                                implementation has
+                                                helped many businesses and people around the world.</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 6
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 3.9/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$35.60
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Database Management</header>
+                                        <section class="card-body">
+                                            <p>Databases are awesome! Manipulating them is even more fun! Another fact:
+                                                they're extremely
+                                                easy to learn too!</p>
+                                            <p>Don't be intimidated by acronyms such as RDBMS. They are actually really
+                                                simple.</p>
+                                            <p>We'll be teaching the correct syntax and commands of SQL in this course.
+                                                You're very welcome
+                                                to join us!</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 4
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.8/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$43.20
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Business Implementation</header>
+                                        <section class="card-body">
+                                            <p>Many think A.I. is only for those "techy" guys and has nothing to do with
+                                                the business
+                                                industry.</p>
+                                            <p>Wrong!</p>
+                                            <p>A.I. has as much value in the business field as in the computer science
+                                                field. In fact, many, if not most, businesses rely heavily on A.I. to
+                                                make well-informed decisions, as well as develop smart marketing
+                                                strategies.</p>
+                                            <p>If you are intending to start a business or if you're already in one, you
+                                                might be interested in enrolling.</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 2
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 3.5/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$25.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Deep Learning</header>
+                                        <section class="card-body">
+                                            <p>You may have heard of the term "Deep Learning" before, but do you know
+                                                what is is?</p>
+                                            <p>Well, it is actually a subset of its parent term, machine learning. We
+                                                have a course all
+                                                about machine learning, but for now we'll just focus on the benefits and
+                                                concepts behind
+                                                deep learning specifically.</p>
+                                            <p>Come join us to learn deep learning today!</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 3.5
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.0/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$36.90
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Computer Vision</header>
+                                        <section class="card-body">
+                                            <p>Computers can see! Look at captchas and stock images: the computer can
+                                                correctly identify
+                                                most of the images they are given.</p>
+                                            <p>Actually, they can't really "see". The best they can do is to predict
+                                                what a photograph is
+                                                depicting by referring to past photos.</p>
+                                            <p>This is all achieved with the use of A.I.. And we're going to show you
+                                                how...</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 4.5
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.6/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$45.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Natural Language Processing (NLP)</header>
+                                        <section class="card-body">
+                                            <div class="card-text">
+                                                <p>What do Siri, Google Home and Cortana have in common?</p>
+                                                <p>That's right! They are voice-activated!</p>
+                                                <p>There's a lot going on behind the scenes; we're going to widen your
+                                                    understanding of one
+                                                    of the core implementations of A.I..</p>
+                                            </div>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 4
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.5/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$40.00
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="card course">
+                                        <header class="card-header">Robotics Integration</header>
+                                        <section class="card-body">
+                                            <p>Know what A.I. is?</p>
+                                            <p>Apply A.I. now by integrating it in Robotics.</p>
+                                            <p>We'll teach you some fundamentals of Robotics, and equip you with all the
+                                                necessary skills to
+                                                make your robots</p>
+                                        </section>
+                                        <footer class="card-footer">
+                                            <ul class="list-group text-primary">
+                                                <li class="list-group-item">
+                                                    Total Number of Hours: 2.5
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Average Rating: 4.7/5.0
+                                                </li>
+                                                <li class="list-group-item fee">
+                                                    Course Fee: US$35.60
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-next pr-xl-4 col-md-1" href="#workshopsCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row mt-5" id="enrolment"></div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

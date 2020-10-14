@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      consultations.html
+        Description:    consultations
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultations</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/consultations.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Consultations</h4>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs nav-justified flex-column flex-sm-row">
+                    <li class="nav-item w-100">
+                        <a class="nav-link active h-100" data-toggle="tab" href="#founders">Our Founders</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link h-100" data-toggle="tab" href="#specialists">Our Specialists</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link h-100" data-toggle="tab" href="#instructors">Our Instructors</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="founders">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-5 col-xl-4">
+                                        <img src="../Images/Specific/Consultations/johnnyOswaldo.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-md-none">
+                                        <img src="../Images/Specific/Consultations/johnnyOswaldoMD.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-md-inline d-lg-none">
+                                        <img src="../Images/Specific/Consultations/johnnyOswaldoLG.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-lg-inline d-xl-none">
+                                        <img src="../Images/Specific/Consultations/johnnyOswaldoXL.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-xl-inline">
+                                    </div>
+                                    <div class="col-md-7 col-xl-8">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Mr Johnny Oswaldo</dt>
+                                            <dd class="list-group-item">73 years old</dd>
+                                            <dd class="list-group-item">Director of A<sup>3</sup> Training & Consultancy
+                                            </dd>
+                                            <dd class="list-group-item">Work Phone: +1 9999 9999</dd>
+                                            <dd class="list-group-item">Official Email: johnny_o@a3t&c.com</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row flex-column-reverse flex-md-row">
+                                    <div class="col-md-6 col-lg-7 col-xl-8">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Mrs Jane Oswaldo</dt>
+                                            <dd class="list-group-item">70 years old</dd>
+                                            <dd class="list-group-item">Instructor Mentor for A<sup>3</sup> Training &
+                                                Consultancy</dd>
+                                            <dd class="list-group-item">Work Phone: +1 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: janeo.87@a3t&c.com</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5 col-xl-4">
+                                        <img src="../Images/Specific/Consultations/janeOswaldo.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-md-none">
+                                        <img src="../Images/Specific/Consultations/janeOswaldoMD.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-md-inline d-lg-none">
+                                        <img src="../Images/Specific/Consultations/janeOswaldoLG.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-lg-inline d-xl-none">
+                                        <img src="../Images/Specific/Consultations/janeOswaldoXL.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-xl-inline">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-5 col-xl-4">
+                                        <img src="../Images/Specific/Consultations/jamesOswaldo.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-md-none">
+                                        <img src="../Images/Specific/Consultations/jamesOswaldoMD.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-md-inline d-lg-none">
+                                        <img src="../Images/Specific/Consultations/jamesOswaldoLG.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-lg-inline d-xl-none">
+                                        <img src="../Images/Specific/Consultations/jamesOswaldoXL.jpg" alt=""
+                                            class="img img-thumbnail img-fluid d-none d-xl-inline">
+                                    </div>
+                                    <div class="col-md-7 col-xl-8">
+                                        <dl class="list-group">
+                                            <dt class="list-group-item">Dr James Oswaldo</dt>
+                                            <dd class="list-group-item">48 years old</dd>
+                                            <dd class="list-group-item">Bookkeeper and Accountant for A<sup>3</sup> Training &
+                                                Consultancy</dd>
+                                            <dd class="list-group-item">Work Phone: +1 8888 8888</dd>
+                                            <dd class="list-group-item">Official Email: jimmy728@a3t&c.com</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane container fade" id="specialists">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Mr William Turner</dt>
+                                    <dd class="list-group-item">45 years old</dd>
+                                    <dd class="list-group-item">Specialist in Programming (C, C++, Java, Python,
+                                        Javscript)</dd>
+                                    <dd class="list-group-item">Specialist in Data Mining</dd>
+                                    <dd class="list-group-item">Work Phone: +1 9999 9999</dd>
+                                    <dd class="list-group-item">Official Email: bill@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Ms Dawn Tan</dt>
+                                    <dd class="list-group-item">38 years old</dd>
+                                    <dd class="list-group-item">Specialist in Critical Thinking</dd>
+                                    <dd class="list-group-item">Specialist in Statistics</dd>
+                                    <dd class="list-group-item">Work Phone: +65 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: dawn_tan_liming@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Mr Sergio Miguel</dt>
+                                    <dd class="list-group-item">47 years old</dd>
+                                    <dd class="list-group-item">Specialist in Artificial Intelligence</dd>
+                                    <dd class="list-group-item">Work Phone: +52 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: migeul_espanol@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane container fade" id="instructors">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Prof. Joe Sivahna</dt>
+                                    <dd class="list-group-item">50 years old</dd>
+                                    <dd class="list-group-item">Instructor for Programming Basics Courses</dd>
+                                    <dd class="list-group-item">Instructor for Advanced Programming Courses</dd>
+                                    <dd class="list-group-item">Work Phone: +1 9999 9999</dd>
+                                    <dd class="list-group-item">Official Email: prof_joe_sivahna@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Ms Sharon Lee</dt>
+                                    <dd class="list-group-item">34 years old</dd>
+                                    <dd class="list-group-item">Instructor for Machine Learning Courses</dd>
+                                    <dd class="list-group-item">Work Phone: +65 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: li_xi_ming_sharon@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Mrs Shermaine Chia</dt>
+                                    <dd class="list-group-item">40 years old</dd>
+                                    <dd class="list-group-item">Instructor for Data Mining Courses</dd>
+                                    <dd class="list-group-item">Work Phone: +65 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: shermaine_chia@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Dr John Lincoln</dt>
+                                    <dd class="list-group-item">36 years old</dd>
+                                    <dd class="list-group-item">Instructor for A.I. Basics Courses</dd>
+                                    <dd class="list-group-item">Work Phone: +65 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: john_lin_kai_xuan@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl class="list-group">
+                                    <dt class="list-group-item">Mdm Helen Johnson</dt>
+                                    <dd class="list-group-item">68 years old</dd>
+                                    <dd class="list-group-item">Instructor for Database Management Courses</dd>
+                                    <dd class="list-group-item">Work Phone: +1 8888 8888</dd>
+                                    <dd class="list-group-item">Official Email: helen_johnson@a3t&c.com</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

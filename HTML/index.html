@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      index.html
+        Description:    home page (welcome, about)
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS Files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/index.css">
+
+    <!-- My Javascript Files -->
+    <script src="../JS/General/session.js" defer></script>
+</head>
+
+<body>
+    <div class="container text-white">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <!-- https://www.flaticon.com/free-icon/list_2099043?term=list&page=1&position=41 -->
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12" id="home">Welcome</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <!-- https://pixabay.com/photos/technology-hands-agreement-ok-4256272/ -->
+                <img src="../Images/Specific/index/welcome.jpg" class="img-thumbnail img-fluid"
+                     alt="Welcome to A3 Training & Consultancy">
+                <article>
+                    <p>Welcome to A3 Training and Consultancy! We are a training and consultancy agency that hopes
+                        to promote the appreciation and application of Artificial Intelligence (A.I.) in everyday lives.
+                        We aim to dissolve the myths surrounding A.I. and reveal the true potential behind its
+                        mysterious nature.
+                    </p>
+                    <h5>What exactly is A.I.?</h5>
+                    <p>A.I. is simply a tool that employs Mathematical equations and functions to predict certain
+                        outcomes or results with precision. A.I. is not magical; A.I. is not dangerous; A.I. is not
+                        smarter than humans. It is a tool and, like all other tools, has the potential to be used for
+                        good as well as for bad.</p>
+                    <p>We hope that, through our website, we would be able to expose more people to A.I. and its
+                        unexplored potential.</p>
+                </article>
+            </div>
+            <div class="col-md-5">
+                <aside id="director_quotes">
+                    <blockquote class="blockquote" id="director_quotes_text">We feel that A.I. is often misunderstood
+                        and misrepresented,
+                        through its
+                        symbolism in novels and movies. We wish to bust the myths surrounding A.I. and, ultimately,
+                        unveil
+                        its potential to everyone. We welcome anyone and everyone to join us in our endeavour. Be
+                        part of
+                        the A.I. Revolution today!</blockquote>
+                    <footer class="blockquote-footer">Mr Johnny Oswaldo, Founder and Director of A<sup>3</sup> Training
+                        &
+                        Consultancy</footer>
+                </aside>
+            </div>
+        </div>
+        <div class="row">
+            <article class="col-md-7" id="mvv">
+                <h5>Our Mission</h5>
+                <p>A.I. is a treasure beyond price</p>
+                <p>Seize It; Save It; Share It</p>
+                <h5>Our Vision</h5>
+                <p>A world where everybody truly appreciates and embraces A.I..</p>
+                <h5>Our Values</h5>
+                <p>Anything is possible</p>
+                <p>Imagination is the key to progress</p>
+            </article>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <article class="col-12">
+                <h5>Our Humble Beginnings</h5>
+                <p>A<sup>3</sup> Training and Consultancy was founded in 1980 by Mr Johnny Oswaldo. He is 73 years old
+                    to date and our Company's current beloved Director. Mr Oswaldo studied Engineering during his
+                    adolescent years and graduated from <abbr title="Massachusetts Institute of Technology">MIT</abbr>
+                    with a Master's Degree in Computer Science. Since then, he has endeavoured to enlighten the world
+                    about <abbr title="Artificial Intelligence">A.I.</abbr>.</p>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-12">
+                <h5>Our Initial Challenges</h5>
+                <p>When A<sup>3</sup> was first establised, only a handful of people had the slightest inklink of what
+                    <abbr title="Artificial Intelligence">A.I.</abbr> was about. Many were adverse to the concept of
+                    robots outsmarting humans, therefore we faced numerous obstacles in our endeavour to empower others'
+                    lives by <abbr title="Artificial Intelligence">A.I.</abbr>.</p>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-12">
+                <h5>Our Success</h5>
+                <p>Since the early 21<sup>st</sup> Century, due to the rapid advancement in Technology globally, we were
+                    able to gain some publicity. Finally, we were one step closer to fulfilling our Mission. We have
+                    come a long way since 1960, with more than 100, 000 members in the US alone and many more in other
+                    parts of the world.</p>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-12">
+                <h5>Our Wishes</h5>
+                <p>We love A.I. and we want you to love It the same way we do. Don't ever let anyone get you down!
+                    Anyone can code. Happy Coding!</p>
+            </article>
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

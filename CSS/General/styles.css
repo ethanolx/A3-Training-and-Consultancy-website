@@ -1,0 +1,164 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Comfortaa Bold";
+    src: url(../../Fonts/Comfortaa-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Comfortaa Regular";
+    src: url(../../Fonts/Comfortaa-Regular.woff2) format('woff2'), url(../../Fonts/Comfortaa-Regular.ttf) format('truetype'), url(../../Fonts/Comfortaa-Regular.woff) format('woff'), url(../../Fonts/Comfortaa-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Sunflower;
+    src: url(../../Fonts/Sunflower-Light.ttf) format('truetype');
+}
+
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File Name:      styles.css
+    Used By:        ALL html files
+    Description:    general styles
+*/
+
+/* Body Styles */
+
+body {
+    background-image: url(../../Images/General/Backgrounds/underseaBG.jpg);
+    background-size: cover;
+}
+
+/* Header Styles */
+
+.company_logo {
+    background: url(../../Images/General/Backgrounds/matrixBG.jpg);
+    height: 130px;
+}
+
+.company_logo>h2 {
+    color: white;
+    text-shadow: 0 0 5px red;
+}
+
+header nav {
+    background-color: rgb(44, 109, 230);
+    background: linear-gradient(140deg, rgb(25, 91, 212), rgb(25, 200, 212));
+}
+
+@media only screen and (max-width: 991px) {
+    header nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+body>div>div>header {
+    border-right: 2px solid slategray;
+    border-left: 2px solid slategray;
+}
+
+/* Title Styles */
+
+div.container>div.row:nth-child(2)>h4 {
+    color: rgb(255, 227, 149);
+    font-family: "Comfortaa Bold", "Comfortaa Regular", Helvetica, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 500px) {
+    div.container>div.row:nth-child(2)>h4 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    div.container>div.row:nth-child(2)>h4 {
+        font-size: 2.6em;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+    div.container>div.row:nth-child(2)>h4 {
+        font-size: 2.3em;
+    }
+}
+
+/* Article Styles */
+
+/* Article Heading Styles */
+
+article h5 {
+    color: bisque;
+    font-family: "Comfortaa Regular", Consolas, Sunflower;
+    font-weight: bolder;
+}
+
+article h6 {
+    color: bisque;
+    font-family: "Comfortaa Regular", Consolas, Sunflower;
+    font-size: 0.9em;
+}
+
+/* Article Paragraph Styles */
+
+article p {
+    color: white;
+    font-family: Sunflower, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+article>ul>li, article>ol>li {
+    font-family: Sunflower, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Aside Styles */
+
+aside {
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    border: 3px double black;
+}
+
+.blockquote {
+    font-size: medium;
+    text-align: justify;
+}
+
+/* Navigation Panel Styles */
+
+#nav_panel>ul a {
+    color: rgb(238, 70, 28);
+}
+
+#nav_panel>ul a:hover::before {
+    content: "| ";
+}
+
+#nav_panel>ul a:hover::after {
+    content: " |";
+}
+
+/* Footer Styles */
+
+body>div.container>div.row>footer {
+    color: whitesmoke;
+}
+
+/* Unordered List styles */
+
+/* Description List Styles */
+
+ul.list-group dl>dd.list-group-item {
+    margin: 0;
+}
+
+ul.list-group li:nth-child(even) dl>dd.list-group-item, ul.list-group li:nth-child(even) dl>dt.list-group-item {
+    background-color: rgb(201, 201, 201);
+}
+

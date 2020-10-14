@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      payment.css
+    Description:    style sheet for payment page
+*/
+
+/* Form Styles */
+
+form label {
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+#courses, #fees {
+    overflow-x: auto;
+}
+
+/* Pill (Mode of Payment) Styles */
+
+#mode_of_payment {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 0.8em;
+}
+
+#mode_of_payment a {
+    color: white;
+}

@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      customer_reviews.css
+    Description:    style sheet for customer reviews page
+*/
+
+/* Carousel Styles */
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner .carousel-item .jumbotron .row:nth-child(2) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.7em;
+}
+
+/* Review Jumbotron Styles */
+
+.jumbotron {
+    height: 100%;
+    padding: 2em 65px;
+}
+
+/* Table Styles */
+
+table>caption {
+    caption-side: top;
+    text-align: center;
+}
+
+/* Navigation Panel Styles */
+
+#nav_panel {
+    position: relative;
+    top: 47px;
+}
+
+/* Cite Styles */
+
+cite.col-12 {
+    padding: 0;
+}
+
+/* General Responsive Styles */
+
+@media only screen and (max-width: 400px) {
+    #reviews .jumbotron small {
+        font-size: xx-small;
+    }
+    #reviews .jumbotron q, #reviews .jumbotron cite {
+        font-size: x-small;
+    }
+    #reviews .jumbotron {
+        padding: 1.2em 36px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 401px) {
+    #reviews .jumbotron small {
+        font-size: x-small;
+    }
+    #reviews .jumbotron q, #reviews .jumbotron cite {
+        font-size: small;
+    }
+    #reviews .jumbotron {
+        padding: 1.5em 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    #reviews .jumbotron small {
+        font-size: small;
+    }
+    #reviews .jumbotron q, #reviews .jumbotron cite {
+        font-size: medium;
+    }
+    #reviews .jumbotron {
+        padding: 1.8em 58px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1001px) {
+    #reviews .jumbotron small {
+        font-size: medium;
+    }
+    #reviews .jumbotron q, #reviews .jumbotron cite {
+        font-size: large;
+    }
+    #reviews .jumbotron {
+        padding: 2em 65px;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    #reviews .jumbotron small {
+        font-size: large;
+    }
+    #reviews .jumbotron q, #reviews .jumbotron cite {
+        font-size: x-large;
+    }
+}
+
+/* Specific Responsive Styles */
+
+@media only screen and (max-width: 250px) {
+    .carousel-inner {
+        height: 270px;
+    }
+    table td, table th {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 350px) and (min-width: 251px) {
+    .carousel-inner {
+        height: 230px;
+    }
+    table td, table th {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 351px) {
+    .carousel-inner {
+        height: 220px;
+    }
+    table td, table th {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 401px) {
+    .carousel-inner {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 501px) {
+    .carousel-inner {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .carousel-inner {
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .carousel-inner {
+        height: 300px;
+    }
+}

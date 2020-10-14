@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      contact_us.css
+    Description:    style sheet for contact us page
+*/
+
+/* Pill Styles */
+
+ul.nav.nav-pills>li>a {
+    color: white;
+}
+
+ul.nav.nav-pills>li>a.nav-link.active {
+    color: black;
+    background-color: rgb(0, 233, 163);
+}
+
+ul.nav.nav-pills>li {
+    width: 33.33%;
+}
+
+/* Navigation Panel Styles */
+
+@media only screen and (min-width: 1200px) {
+    #nav_panel {
+        margin-top: 54px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #nav_panel {
+        margin-top: 78px;
+    }
+}
+
+/* Unordered List Styles */
+
+article#operations>ul {
+    list-style-type: circle;
+}
+
+article#operations>ul>li {
+    margin: 0.6em 0;
+}
+
+ul.list-group li:nth-child(odd) {
+    background-color: rgb(201, 201, 201);
+}
+
+/* Form Styles */
+
+fieldset>legend {
+    width: 400px;
+}

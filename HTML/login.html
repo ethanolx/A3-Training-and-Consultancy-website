@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      login.html
+        Description:    login and registration page
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/Specific/login.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/General/enrolment.js" defer></script>
+    <script src="../JS/Specific/login.js" defer></script>
+</head>
+
+<body>
+    <div class="container text-white">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Login Page</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-xl-6">
+                <form action="#" class="needs-validation" id="signingIn">
+                    <fieldset class="border p-3">
+                        <legend>For Existing Members</legend>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-3" for="email">Email:</label>
+                            <div class="col-lg-9">
+                                <input type="email" id="email" class="form-control" pattern="^[\w\.]+@(\w+\.)+((\w)+)$"
+                                    placeholder="johnsmith.20@xyz.net" required />
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-3" for="password">Password:</label>
+                            <div class="col-lg-9"><input type="password" id="password" class="form-control"
+                                    minlength="8" maxlength="20" required />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark" onmousedown="signIn()">Sign In</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-md-7 col-xl-6">
+                <form action="#" class="mt-5 mt-md-0 needs-validation" id="signingUp">
+                    <fieldset class="border p-3">
+                        <legend>For New Members</legend>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-4" for="fullName">Full Name:</label>
+                            <div class="col-lg-8"><input type="text" id="fullName" class="form-control"
+                                    pattern="^([A-Za-z][a-z]+ )*([A-Za-z][a-z]+)$" placeholder="John Smith" required /></div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-4" for="newEmail">Email Address:</label>
+                            <div class="col-lg-8">
+                                <input type="email" id="newEmail" class="form-control"
+                                    pattern="^[\w\.]+@(\w+\.)+((\w)+)$" placeholder="johnsmith.20@xyz.net" required />
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-4" for="country">Country:</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="country" class="form-control" placeholder="United States"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-4" for="newPW">New Password:</label>
+                            <div class="col-lg-8"><input type="password" id="newPW" class="form-control" minlength="8"
+                                    maxlength="20" required />
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-lg-4" for="confirmPW">Confirm
+                                Password:</label>
+                            <div class="col-lg-8"><input type="password" id="confirmPW" class="form-control"
+                                    minlength="8" maxlength="20" required />
+                            </div>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" name="newsAndUpdates" id="news" class="form-check-input">
+                            <label for="news" class="form-check-label">Sign me up for news and updates</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" name="T&Cs" id="tc" class="form-check-input" onclick="checkTCs()"
+                                required>
+                            <label for="tc" class="form-check-label">I agree to the Terms & Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark"
+                            title="Please agree to our Terms & Conditions to proceed" id="signup" disabled>Sign
+                            Up</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-5">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="terms-tab" data-toggle="tab" href="#terms">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="privacy-tab" data-toggle="tab" href="#privacy">Our Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="registration-tab" data-toggle="tab" href="#registration">Registration Details</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <article class="tab-pane fade show active conditions" id="terms">
+                        <h5>Our Terms & Conditions</h5>
+
+                        <h6>Important</h6>
+
+                        <p>Last updated: 20/07/2020</p>
+
+                        <p>Please read these Terms and Conditions carefully before registering to be a member of the
+                            A<sup>3</sup> Group operated by A<sup>3</sup> Training and Consultancy.</p>
+
+                        <p>Your access to and use of the Service is conditioned on your acceptance of and compliance
+                            with these Terms. These Terms apply to all visitors, users and others who access or use the
+                            Service.</p>
+
+                        <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with
+                            any part of the terms, then you may not access the Service.</p>
+
+                        <h6>Purchases</h6>
+
+                        <p>If you wish to purchase any product or service made available through the Service, you may be
+                            asked to supply certain information relevant to your Purchase including, without limitation,
+                            your …</p>
+
+                        <h6>Content</h6>
+
+                        <p>Our Service allows you to post, link, store, share and otherwise make available certain
+                            information, text, graphics, videos, or other material.</p>
+
+                        <h6>Links To Other Web Sites</h6>
+
+                        <p>Our Service may contain links to third-party web sites or services that are not owned or
+                            controlled by A3 Training and Consultancy.</p>
+
+                        <p>A<sup>3</sup> Training and Consultancy has no control over, and assumes no responsibility
+                            for, the content, privacy policies, or practices of any third party web sites or services.
+                            You further acknowledge and agree that A<sup>3</sup> Training and Consultancy shall not be
+                            responsible or liable, directly or indirectly, for any damage or loss caused or alleged to
+                            be caused by or in connection with use of or reliance on any such content, goods or services
+                            available on or through any such web sites or services.</p>
+
+                        <h6>Changes</h6>
+
+                        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+                            If a revision is material we will try to provide at least 30 days' notice prior to any new
+                            terms taking effect. What constitutes a material change will be determined at our sole
+                            discretion.</p>
+
+                        <h6>Contact Us</h6>
+
+                        <p>If you have any questions about these Terms, please contact us.</p>
+
+                    </article>
+                    <article class="tab-pane fade conditions" id="privacy">
+                        <h5>Our Privacy Policy</h5>
+
+                        <h6>Important</h6>
+
+                        <p>At A<sup>3</sup> Training & Consultancy, accessible from <a
+                                href="#">https://www.a3t&c.com</a>, one of our main priorities is the privacy of our
+                            members. This Privacy Policy document contains types of information that is collected and
+                            recorded by A3 Training & Consultancy and how we use it.</p>
+
+                        <p>If you have additional questions or require more information about our Privacy Policy, do not
+                            hesitate to contact us.</p>
+
+                        <p>This Privacy Policy applies only to our online activities and is valid for members to our
+                            website with regards to the information that they shared and/or collect in A<sup>3</sup>
+                            Training & Consultancy. This policy is not applicable to any information collected offline
+                            or via channels other than this website.</p>
+
+                        <h6>Consent</h6>
+
+                        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+                        <h6>Information we collect</h6>
+
+                        <p>The personal information that you are asked to provide, and the reasons why you are asked to
+                            provide it, will be made clear to you at the point we ask you to provide your personal
+                            information.</p>
+
+                        <p>If you contact us directly, we may receive additional information about you such as your
+                            name, email address, phone number, the contents of the message and/or attachments you may
+                            send us, and any other information you may choose to provide.</p>
+
+                        <p>When you register for an Account, we may ask for your contact information, including items
+                            such as name, address, email address, and telephone number.</p>
+
+                        <h6>How we use your information</h6>
+
+                        <p>We use the information we collect in various ways, including to:</p>
+
+                        <ul>
+                            <li>Provide, operate, and maintain our website</li>
+                            <li>Improve, personalize, and expand our website</li>
+                            <li>Understand and analyze how you use our website</li>
+                            <li>Develop new products, services, features, and functionality</li>
+                            <li>Communicate with you, either directly or through one of our
+                                partners, including for customer service, to provide you with updates and other
+                                information relating to the website, and for marketing and promotional purposes</li>
+                            <li>Send you emails</li>
+                            <li>Find and prevent fraud</li>
+                            <li>Log Files</li>
+                        </ul>
+
+                        <p>A<sup>3</sup> Training & Consultancy follows a standard procedure of using log files. These
+                            files log visitors when they visit websites. All hosting companies do this and a part of
+                            hosting services' analytics. The information collected by log files include internet
+                            protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp,
+                            referring/exit pages, and possibly the number of clicks. These are not linked to any
+                            information that is personally identifiable. The purpose of the information is for analyzing
+                            trends, administering the site, tracking users' movement on the website, and gathering
+                            demographic information.</p>
+
+                        <p>Our Privacy Policy was created with the help of the Privacy Policy Generator and the Online
+                            Privacy Policy Generator.</p>
+
+                        <h6>Third Party Privacy Policies</h6>
+
+                        <p>A<sup>3</sup> Training & Consultancy's Privacy Policy does not apply to other advertisers or
+                            websites. Thus, we are advising you to consult the respective Privacy Policies of these
+                            third-party ad servers for more detailed information. It may include their practices and
+                            instructions about how to opt-out of certain options.</p>
+
+                        <p>You can choose to disable cookies through your individual browser options. To know more
+                            detailed information about cookie management with specific web browsers, it can be found at
+                            the browsers' respective websites.</p>
+
+                        <h6>Data Protection Rights</h6>
+
+                        <p>We would like to make sure you are fully aware of all of your data protection rights. Every
+                            user is entitled to the following:</p>
+                        <ul>
+
+                            <li>The right to access – You have the right to request copies of
+                                your personal data. We may charge you a small fee for this service.</li>
+
+                            <li>The right to rectification – You have the right to request that
+                                we correct any information you believe is inaccurate. You also have the right to request
+                                that we complete the information you believe is incomplete.</li>
+
+                            <li>The right to erasure – You have the right to request that we
+                                erase your personal data, under certain conditions.</li>
+
+                            <li>The right to restrict processing – You have the right to request
+                                that we restrict the processing of your personal data, under certain conditions.</li>
+
+                            <li>The right to object to processing – You have the right to object
+                                to our processing of your personal data, under certain conditions.</li>
+
+                            <li>The right to data portability – You have the right to request
+                                that we transfer the data that we have collected to another organization, or directly to
+                                you, under certain conditions.</li>
+                        </ul>
+                        <p>If you make a request, we have one month to respond to you. If you would like to exercise any
+                            of these rights, please contact us.</p>
+                    </article>
+                    <article class="tab-pane fade conditions" id="registration">
+                        <h5>Registration Details</h5>
+
+                        <h6>Important</h6>
+
+                        <p>By Registering to be a member of the A<sup>3</sup> Training & Consultancy group, you agree to
+                            the following:</p>
+
+                        <ul>
+                            <li>A<sup>3</sup> Training & Consultancy's Terms & Conditions</li>
+                            <li>A<sup>3</sup> Training & Consultancy's Privacy Policy</li>
+                        </ul>
+
+                        <h6>How to Register</h6>
+
+                        <ol>
+                            <li>Fill up the Registration form (for new members) above with accurate data.</li>
+                            <li>Submit the form.</li>
+                            <li>You will receive a confirmation email from us afterwards, indicating the success of your
+                                registration.</li>
+                        </ol>
+
+                        <p>That's it! You're done!</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      lectures.html
+        Description:    lecture courses
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/General/courses.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/General/enrolment.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Our Lectures</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Programming Basics</header>
+                    <section class="card-body">
+                        <p>What is programming? What's the difference between a program and an algorithm? How do
+                            computers execute programs?</p>
+                        <p>If you aren't sure of how to answer these questions, don't worry! We have an entire course
+                            planned out for you.</p>
+                        <p>By the end of our Programming Basics course, you'll master most of the basic techniques of
+                            programming in Python.</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 20
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 8
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.7/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$5.60
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">A.I. Basics</header>
+                    <section class="card-body">
+                        <div class="card-text">
+                            <p>The subject of A.I. is very prevalent in this modern era, yet many people have very
+                                little to no real clue what A.I. is or worse, they distort the image of A.I. altogether.
+                            </p>
+                            <p>Fear not, we're here to dispel your doubts!</p>
+                            <p>In this course, we'll explain in detail what A.I. is all about, as well as give you a
+                                solid foundation in programming with A.I..</p>
+                        </div>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 20
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 8
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.0/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$5.60
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Advanced Programming</header>
+                    <section class="card-body">
+                        <p>You've probably learnt the basics of Object-Oriented Programming already. Nevertheless,
+                            that's only the tip of the iceberg! There are much more programming treasures in store for
+                            you!</p>
+                        <p>It's time to move on and acquire more powerful programming skills in order to optimise your
+                            code and conserve your resources more efficiently.</p>
+                        <p>Welcome to the next segment of your programming journey, with our Advanced Programming
+                            course.</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 12
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 6
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.2/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$6.50
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Data Mining</header>
+                    <section class="card-body">
+                        <p>You may have heard of the term "Data Mining" before. But what is it exactly? Is it even
+                            relevant in today's context?</p>
+                        <p>Well, it certainly is!</p>
+                        <p> Many large companies employ data scientists to help them observe and interpret trends in the
+                            global and/or local markets, assisting their business decisions.</p>
+                        <p>
+                            In fact, qualified data scientists are highly sought after
+                            in today's day and age.
+                        </p>
+                        <p>So what are you waiting for?</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 8
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 6
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.8/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$6.00
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Machine Learning</header>
+                    <section class="card-body">
+                        <p>First off, machine learning is not magic, neither does it mean that the machine is thinking
+                            on its own. How then does it make accurate and precise predictions consistently?</p>
+                        <p>Come and find out the mystery of machine learning today.</p>
+                        <p>In this course, we'll reveal the secrets of machine learning and how its implementation has
+                            helped many businesses and people around the world.</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 24
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 10
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.3/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$5.60
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Database Management</header>
+                    <section class="card-body">
+                        <p>Databases are awesome! Manipulating them is even more fun! Another fact: they're extremely
+                            easy to learn too!</p>
+                        <p>Don't be intimidated by acronyms such as RDBMS. They are actually really simple.</p>
+                        <p>We'll be teaching the correct syntax and commands of SQL in this course. You're very welcome
+                            to join us!</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Videos: 5
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 4.5
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.8/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$3.50
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="enrolment">
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

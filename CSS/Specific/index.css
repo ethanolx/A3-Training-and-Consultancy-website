@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      index.css
+    Description:    style sheet for index page
+*/
+
+/* Aside (Director Quotes) Styles */
+
+aside#director_quotes {
+    margin-bottom: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside#director_quotes_text {
+    font-size: larger;
+}
+
+aside#director_quotes>footer.blockquote-footer {
+    color: black;
+}
+
+/* Title Styles */
+@media only screen and (min-width: 1001px) {
+    #home {
+        margin-bottom: 0.6em;
+    }
+}
+
+/* X-Small Screen Styles */
+@media only screen and (max-width: 575px) {
+    p {
+        font-size: 0.8em;
+    }
+    aside#director_quotes {
+        padding: 1em;
+    }
+    aside#director_quotes>* {
+        font-size: small;
+    }
+}

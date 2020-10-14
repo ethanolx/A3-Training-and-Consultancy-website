@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Organisation:   A^3 Training and Consultancy
+        Author:         Ethan Tan
+        Date:           30/06/2020
+
+        File name:      tutorials.html
+        Description:    tutorial courses
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+
+    <!-- Reset Style Sheet -->
+    <link rel="stylesheet" href="../CSS/General/reset.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="../CSS/General/layout.css">
+    <link rel="stylesheet" href="../CSS/General/styles.css">
+    <link rel="stylesheet" href="../CSS/General/courses.css">
+
+    <!-- My Javascript files -->
+    <script src="../JS/General/session.js" defer></script>
+    <script src="../JS/General/forms.js" defer></script>
+    <script src="../JS/General/enrolment.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <div class="row company_logo">
+                    <h2>A<sup>3</sup> Training and Consultancy</h2>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md col-12">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <img src="../Images/General/Navbar/list.png" alt="...">
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav col-12 justify-content-around">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53 -->
+                                        <img src="../Images/General/Navbar/house32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                        <img src="../Images/General/Navbar/house24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./training_courses.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/presentation_744303 -->
+                                        <img src="../Images/General/Navbar/presentation32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline">
+                                             <img src="../Images/General/Navbar/presentation24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Our Training
+                                        Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./customer_reviews.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3 -->
+                                        <img
+                                             src="../Images/General/Navbar/like32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/like24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Customer
+                                        Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact_us.html" class="nav-link text-light">
+                                        <!-- https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40 -->
+                                        <img
+                                             src="../Images/General/Navbar/telephone32.png" alt=""
+                                             class="pb-2 d-none d-xl-inline"><img
+                                             src="../Images/General/Navbar/telephone24.png" alt=""
+                                             class="pb-2 d-inline d-xl-none">&nbsp;&nbsp;Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item" id="login"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <h4 class="col-12">Our Tutorials</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Robotics Integration</header>
+                    <section class="card-body">
+                        <p>Know what A.I. is?</p>
+                        <p>Apply A.I. now by integrating it in Robotics.</p>
+                        <p>We'll teach you some fundamentals of Robotics, and equip you with all the necessary skills to
+                            make your robots</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 8
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 5
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.3/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$15.80
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Natural Language Processing (NLP)</header>
+                    <section class="card-body">
+                        <div class="card-text">
+                            <p>What do Siri, Google Home and Cortana have in common?</p>
+                            <p>That's right! They are voice-activated!</p>
+                            <p>There's a lot going on behind the scenes; we're going to widen your understanding of one
+                                of the core implementations of A.I..</p>
+                        </div>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 10
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 6
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.0/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$15.60
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Computer Vision</header>
+                    <section class="card-body">
+                        <p>Computers can see! Look at captchas and stock images: the computer can correctly identify
+                            most of the images they are given.</p>
+                        <p>Actually, they can't really "see". The best they can do is to predict what a photograph is
+                            depicting by referring to past photos.</p>
+                        <p>This is all achieved with the use of A.I.. And we're going to show you how...</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 7
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 6
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.5/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$14.90
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Deep Learning</header>
+                    <section class="card-body">
+                        <p>You may have heard of the term "Deep Learning" before, but do you know what is is?</p>
+                        <p>Well, it is actually a subset of its parent term, machine learning. We have a course all
+                            about machine learning, but for now we'll just focus on the benefits and concepts behind
+                            deep learning specifically.</p>
+                        <p>Come join us to learn deep learning today!</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 8
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 6
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 4.1/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$26.00
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Machine Learning</header>
+                    <section class="card-body">
+                        <p>This is a course on machine learning, an umbrella term for numerous algorithms that "teach"
+                            computers to identify, classify input and predict outcomes based on past data.</p>
+                        <p>In this course, we'll reveal the secrets of machine learning and how its implementation has
+                            helped many businesses and people around the world.</p>
+                        <p>Don't hesitate:</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 12
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 10
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.8/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$23.30
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card course h-100">
+                    <header class="card-header">Business Implementation</header>
+                    <section class="card-body">
+                        <p>Many think A.I. is only for those "techy" guys and has nothing to do with the business
+                            industry.</p>
+                        <p>Wrong!</p>
+                        <p>A.I. has as much value in the business field as in the computer science field. In fact, many, if not most, businesses rely heavily on A.I. to make well-informed decisions, as well as develop smart marketing strategies.</p>
+                        <p>If you are intending to start a business or if you're already in one, you might be interested in enrolling.</p>
+                    </section>
+                    <footer class="card-footer">
+                        <ul class="list-group text-primary">
+                            <li class="list-group-item">
+                                Number of Tutorials: 5
+                            </li>
+                            <li class="list-group-item">
+                                Total Number of Hours: 4
+                            </li>
+                            <li class="list-group-item">
+                                Average Rating: 3.2/5.0
+                            </li>
+                            <li class="list-group-item fee">
+                                Course Fee: US$12.00
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="enrolment">
+        </div>
+        <div class="row">
+            <footer class="col-12 text-center">
+                <small>A3 Training & Consultancy &#x2b24; 123 Main Street, Massachusetts 10000, US</small>
+                <br />
+                <small>&copy; 2020 Ethan Tan Wee En p2012085 DAAA/FT/1A/03</small>
+                <br />
+                <small>All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

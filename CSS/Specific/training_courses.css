@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*
+    Organisation:   A^3 Training and Consultancy
+    Author:         Ethan Tan
+    Date:           30/06/2020
+
+    File name:      training_courses.css
+    Used By:
+    Description:    style sheet for training courses page
+*/
+
+/* Navigation Panel Styles */
+
+#nav_panel {
+    margin-top: 75px;
+}
+
+/* Subtitle Styles */
+
+h4.course_category {
+    margin: 1em 0;
+}

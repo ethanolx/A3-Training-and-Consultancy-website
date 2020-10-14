@@ -1,0 +1,73 @@
+$ Images/General
+
+# /Backgrounds
+
+File Name:          matrixBG.jpg
+By:                 Comfreak
+Available From:     https://pixabay.com/illustrations/matrix-code-computer-pc-data-356024/
+
+File Name:          underseaBG.jpg
+By:                 BreathlessDesign
+Available From:     https://pixabay.com/photos/sea-ocean-water-sunlight-waves-3255634/
+
+# /Navbar
+
+File Name:          list.png
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/list_2099043?term=list&page=1&position=41
+
+File Name:          house24.png; house32.png
+By:                 Smashicons
+Available From:     https://www.flaticon.com/free-icon/house_660026?term=home&page=1&position=53
+
+File Name:          presentation24.png; presentation32.png
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/presentation_744303
+
+File Name:          like24.png; like32.png
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/feedback_3039508?term=like%20dislike&page=1&position=3
+
+File Name:          telephone24.png; telephone32.png
+By:                 Vitaly Gorbachev
+Available From:     https://www.flaticon.com/free-icon/telephone_2526576?term=telephone&page=2&position=40
+
+File Name:          lock24.png; lock32.png
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/lock_861830?term=lock&page=1&position=13
+
+File Name:          unlock24.png; unlock32.png
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/unlock_861831?term=lock&page=1&position=96
+
+$ Images/Specific
+
+# /Consultations
+
+File Name:          jamesOswaldo.jpg; jamesOswaldoMD.jpg; jamesOswaldoLG.jpg; jamesOswaldoXL.jpg
+By:                 roboturansky
+Available From:     https://pixabay.com/photos/smile-work-business-success-5047506/
+
+File Name:          janeOswaldo.jpg; janeOswaldoMD.jpg; janeOswaldoLG.jpg; janeOswaldoXL.jpg
+By:                 silviarita
+Available From:     https://pixabay.com/photos/woman-age-in-the-free-air-health-3186741/
+
+File Name:          johnnyOswaldo.jpg; johnnyOswaldoMD.jpg; johnnyOswaldoLG.jpg; johnnyOswaldoXL.jpg
+By:                 geralt
+Available From:     https://pixabay.com/photos/man-old-view-question-mark-2546107/
+
+# /Index
+
+File Name:          welcome.jpg
+By:                 kiquebg
+Available From:     https://pixabay.com/photos/technology-hands-agreement-ok-4256272/
+
+# /Reviews
+
+File Name:          fullStar16.jpg; fullStar24.jpg; fullStar32.jpg
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/star_786432?term=star&page=1&position=15
+
+File Name:          emptyStar16.jpg; emptyStar24.jpg; emptyStar32.jpg
+By:                 Freepik
+Available From:     https://www.flaticon.com/free-icon/star_786230
